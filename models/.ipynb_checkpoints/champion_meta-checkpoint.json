@@ -1,0 +1,9 @@
+{
+  "champion_model": "XGBoost (Tuned)",
+  "optimal_threshold": 0.4000000000000001,
+  "cost_optimal_threshold": 0.05,
+  "val_roc_auc": 0.9390945503717276,
+  "val_pr_auc": 0.6864507816265034,
+  "test_roc_auc": 0.928484399583484,
+  "test_pr_auc": 0.6164884488578741
+}
