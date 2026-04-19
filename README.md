@@ -1,6 +1,6 @@
 # Credit-Card-Fraud-Detection-System
 
-End-to-end ML pipeline for credit card fraud detection on the IEEE-CIS Fraud dataset. Covers exploratory analysis, feature engineering, model training with Bayesian hyperparameter tuning, and a threshold A/B test with statistical and practical significance evaluation. Champion model: LightGBM (Tuned), selected via structured A/B test.
+End-to-end ML pipeline for credit card fraud detection on the IEEE-CIS Fraud dataset. Covers exploratory analysis, feature engineering, model training with Bayesian hyperparameter tuning, and a threshold A/B test with statistical and practical significance evaluation. Champion model: XGBoost (Tuned), selected via structured A/B test.
 
 ---
 
