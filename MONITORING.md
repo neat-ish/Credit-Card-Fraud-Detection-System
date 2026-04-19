@@ -2,7 +2,7 @@
 
 **Project:** Credit-Card-Fraud-Detection-System
 **Dataset:** IEEE-CIS Fraud Detection (Kaggle)
-**Champion Model:** LightGBM (Tuned) -- selected via A/B test in notebook 04
+**Champion Model:** XGBoost (Tuned) -- selected via A/B test in notebook 04
 
 **Deployment context:** Batch fraud scoring pipeline -- transaction-level binary classification for real-time fraud flag generation
 
@@ -104,7 +104,7 @@ This section is a lightweight handoff reference. The pipeline is batch-only by d
 
 ### 4.1 Serving Pattern
 
-- **Batch scoring:** Run LightGBM on all transactions from the prior period (hourly or daily). Write fraud probability scores to a results table.
+- **Batch scoring:** Run XGBoost on all transactions from the prior period (hourly or daily). Write fraud probability scores to a results table.
 - **Threshold application:** A downstream rule engine reads the scores and applies the operational threshold from `champion_meta.json` to generate binary flags.
 - **Real-time scoring:** Not supported by this pipeline. If sub-second per-transaction scoring is needed, a separate lightweight model (e.g. doubly robust or DML) should be trained on the same feature set and served as a REST endpoint.
 
@@ -131,4 +131,4 @@ The scoring environment must match training exactly.
 
 ---
 
-*Credit-Card-Fraud-Detection-System | Nitish Patnaik | github.com/neat-ish*
+*Nitish Patnaik | github.com/neat-ish*
